@@ -13,7 +13,7 @@ def countdown(t):
 
 #Main Block
 spam_text = "#GhostOfTheMountains #OneSpiritOneDream"
-interval = input("Enter time interval between each hashtag:\n")
+interval = int(input("Enter time interval between each hashtag:\n"))
 print("Sleeping for 10 seconds.. Point your cursor to the YouTube Chat Box")
 countdown(10)
 print("Starting the bot...\n\n")
@@ -24,6 +24,6 @@ while True:
     time.sleep(1)
     pyautogui.press("enter")
     print(f"Sent!\nTotal hashtags sent: {n}")
-    print("Sending again in(slowmode cooldown):")
+    print("Sending again in:")
     countdown(interval)
     print("\n\n")
