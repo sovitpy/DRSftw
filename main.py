@@ -18,7 +18,7 @@ print("Sleeping for 10 seconds.. Point your cursor to the YouTube Chat Box")
 countdown(10)
 print("Starting the bot...\n\n")
 n = 0
-while True:
+while True: #For running unlimited times.
     n += 1
     pyautogui.write(spam_text,interval=0.25)
     time.sleep(1)
